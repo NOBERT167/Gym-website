@@ -1,13 +1,21 @@
-import React, { Component } from "react";
-import Navbar from "./Components/Navbar/Navbar";
+import React, { Component, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Nav from "./Components/Nav";
+import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-      </div>
+      <>
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+
+          <Route path="/signin" component={SignIn} exact />
+        </Switch>
+      </>
     </Router>
   );
 }
