@@ -27,7 +27,7 @@ function Hero() {
       </HeroBg>
       <HeroContent>
         <HeroHeading>
-          Stay Fit <Span>.</Span>{" "}
+          Stay Fit<Span>.</Span>{" "}
         </HeroHeading>
         <HeroP>
           Enjoy unlimited gym access and free gym classes for a low cost
